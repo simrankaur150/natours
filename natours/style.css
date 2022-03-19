@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"lato",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header{
+  height: 95vh;
+  background-image:linear-gradient(to right,rgba(154, 241, 138, 0.678),rgba(39, 180, 133, 0.801)), url(https://images.unsplash.com/photo-1646519834989-1526d68fdb3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0,100% 0,100% 75vh,0 100% );
+  
+}
+
+.logo-box{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+}
+
+.logo{
+  height: 35px;
+  width: 35px;
+
+}
+
+.text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.heading-primary{
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.heading-primary-main{
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 30px;
+
+}
+
+.heading-primary-sub{
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 15px;
+}
+
+
+
+.btn:link,
+.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px;
+}
+
+.btn:active{
+  transform: translateY(-1px);
+}
+
+.btn-white{
+  background-color: white;
+  color: #777;
+ 
+}
+
+@keyframes moveInleft{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  
+}
